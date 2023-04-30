@@ -2,9 +2,11 @@ import './style.scss'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
+import { setupCanvas } from './p5canvas.ts'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
+document.querySelector<HTMLDivElement>('.hero')!.innerHTML = `
+  <div class="hero__canvas-container"></div>
+  <div class="hero__container">
     <a href="https://vitejs.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
     </a>
@@ -22,3 +24,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 `
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+
+setupCanvas(document.querySelector<HTMLDivElement>('.hero__canvas-container')!)

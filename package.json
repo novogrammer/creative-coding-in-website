@@ -9,8 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/p5": "^1.6.1",
     "sass": "^1.62.1",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "p5": "^1.6.0"
   }
 }
