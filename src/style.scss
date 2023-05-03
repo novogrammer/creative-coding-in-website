@@ -44,11 +44,6 @@ h1 {
     width:100%;
     height:100%;
   }
-  &__canvas{
-    display:block;
-    width:100%;
-    height:100%;
-  }
   &__container{
     position:absolute;
     left:50%;
@@ -60,6 +55,44 @@ h1 {
     backdrop-filter: blur(0.2rem);
   }
 }
+
+.statement {
+  position:relative;
+  width:100%;
+  min-height: 100vh;
+  background:#f0f;
+  &__canvas-container{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+  }
+  &__container{
+    position:relative;
+    padding-top:5rem;
+    
+  }
+  &__title{
+    margin:0;
+    text-align:center;
+    font-size:5rem;
+    line-height:1.5em;
+    margin-bottom:1em;
+    color:#fff;
+    text-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+
+  }
+  &__text{
+    margin:0;
+    text-align:center;
+    font-size:3rem;
+    line-height:2em;
+    color:#fff;
+    text-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+  }
+}
+
 
 .logo {
   height: 6em;

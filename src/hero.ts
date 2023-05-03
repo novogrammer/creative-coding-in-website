@@ -2,7 +2,7 @@ import './style.scss'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
-import { setupCanvas } from './p5canvas.ts'
+import { setupP5Canvas } from './p5canvas.ts'
 
 document.querySelector<HTMLDivElement>('.hero')!.innerHTML = `
   <div class="hero__canvas-container"></div>
@@ -25,4 +25,4 @@ document.querySelector<HTMLDivElement>('.hero')!.innerHTML = `
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 
-setupCanvas(document.querySelector<HTMLDivElement>('.hero__canvas-container')!)
+setupP5Canvas(document.querySelector<HTMLDivElement>('.hero__canvas-container')!)
