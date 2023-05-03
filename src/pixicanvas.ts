@@ -14,6 +14,8 @@ uniform float uTime;
 
 void main(void)
 {
+  vec3 col = 0.5 + 0.5*cos(uTime+vTextureCoord.xyx+vec3(0,2,4));
+
   float value=sin(uTime)*0.25+0.75;
   float l=10000.0;
   float minSize=min(inputSize.x,inputSize.y);
@@ -22,7 +24,7 @@ void main(void)
     l=length(uv - uPointerPosition);
   }
   
-  gl_FragColor = vec4(minSize / l * 0.125,1.0,value,1.0);
+  gl_FragColor = vec4(col.xy,minSize / l * 0.125,1.0);
 
 }
 
