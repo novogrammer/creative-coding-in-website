@@ -1,5 +1,7 @@
 # creative-coding-in-website
-クリエイティブコーディング
+クリエイティブコーディングをWebサイトに組み込んでみる
+
+demo https://novogrammer.github.io/creative-coding-in-website/
 
 
 ## このプロジェクトを同じように作るには
