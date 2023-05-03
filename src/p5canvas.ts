@@ -67,7 +67,7 @@ export function setupP5Canvas(canvasContainer:HTMLDivElement){
       p5.resizeCanvas(canvasContainer.clientWidth,canvasContainer.clientHeight);
     })
   }
-  const p5=new P5(sketch,canvasContainer);
+  new P5(sketch,canvasContainer);
   
   
 }
