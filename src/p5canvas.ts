@@ -30,6 +30,7 @@ export function setupP5Canvas(canvasContainer:HTMLDivElement){
     
     p5.setup=()=>{
       p5.noiseSeed(0);
+      p5.pixelDensity(1);
       p5.createCanvas(canvasContainer.clientWidth,canvasContainer.clientHeight,p5.WEBGL);
     }
     p5.draw=()=>{
