@@ -3,6 +3,9 @@
 
 demo https://novogrammer.github.io/creative-coding-in-website/
 
+パフォーマンスチューニングをしていないので重たいです。<br>
+2画面分なのでさらに重たいです。<br>
+
 
 ## このプロジェクトを同じように作るには
 viteのvanilla-tsテンプレートを使う
